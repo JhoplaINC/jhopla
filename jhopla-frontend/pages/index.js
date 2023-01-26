@@ -1,2 +1,3 @@
-export * from './AboutMe';
-export * from './Contact';
+export * from './AboutMePage';
+export * from './ContactPage';
+export * from './IndexPage';
