@@ -1,0 +1,15 @@
+.navbar {
+    background-color: rgb(253, 247, 122);
+
+    .nav-link {
+        color: rgb(26, 56, 31);
+
+        &.active {
+            color: rgb(0, 0, 0)!important;
+        }
+
+        &:hover {
+            color: rgb(0, 0, 0)!important;
+        }
+    }
+}
