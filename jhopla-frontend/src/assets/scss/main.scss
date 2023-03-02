@@ -1,8 +1,13 @@
+// VARIABLES
+$mainColor: rgb(253, 247, 122);
+$secondaryColor: rgb(163, 255, 149);
+$mainTextColor: rgb(26, 56, 31);
+
 .navbar {
-    background-color: rgb(253, 247, 122);
+    background-color: $mainColor;
 
     .nav-link {
-        color: rgb(26, 56, 31);
+        color: $mainTextColor;
 
         &.active {
             color: rgb(0, 0, 0)!important;
@@ -10,6 +15,102 @@
 
         &:hover {
             color: rgb(0, 0, 0)!important;
+        }
+    }
+}
+
+.jhpl-index {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        margin: 5% auto;
+    }
+
+    .technologies {
+
+        .client-side-technologies{
+            align-items: center;
+            background-color: $mainColor;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 10%;
+
+            h3 {
+                color: $mainTextColor;
+                margin: 5% 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            img {
+                margin: 0 5.5% 5%;
+                width: 22%;
+            }
+        }
+        
+        .server-side-technologies {
+            align-items: center;
+            background-color: $mainColor;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 10%;
+
+            h3 {
+                color: $mainTextColor;
+                margin: 5% 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            img {
+                margin: 0 5.5% 5%;
+                width: 22%;
+            }
+        }
+
+        .api-technologies {
+            align-items: center;
+            background-color: $mainColor;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 10%;
+
+            h3 {
+                color: $mainTextColor;
+                margin-top: 5%;
+                text-align: center;
+                width: 100%;
+            }
+
+            img {
+                margin-top: -15%;
+                width: 50%;
+            }
+        }
+    }
+}
+
+.about-me {
+
+    h5 {
+        text-align: center;
+    }
+
+    .faqs-info {
+
+        .faqs-section {
+            background-color: $secondaryColor;
+
+            .faq-data {
+                text-align: center;
+            }
         }
     }
 }
